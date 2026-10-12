@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "title": "المعرفة",
+  "subtitle": "محتوى تنشره الإدارة، ويُحفظ على جهازك بعد فتحه ليُقرأ بدون إنترنت.",
+  "groups": [
+    {
+      "label": "الأقسام",
+      "items": [
+        { "icon": "🕌", "title": "الدين", "desc": "محتوى إيماني مراجع.", "href": "#/knowledge/category/religion" },
+        { "icon": "🩺", "title": "الصحة", "desc": "معلومات صحية ونفسية عامة.", "href": "#/knowledge/category/health" },
+        { "icon": "📰", "title": "المقالات", "desc": "مقالات قصيرة وعملية.", "href": "#/knowledge/category/articles" },
+        { "icon": "🎬", "title": "الفيديوهات", "desc": "مقاطع مرئية هادفة.", "href": "#/knowledge/category/videos" }
+      ]
+    }
+  ],
+  "categories": {
+    "religion": {
+      "title": "الدين",
+      "source": "articles",
+      "empty": "سيُنشر هنا محتوى إيماني بعد مراجعته من جهة مختصة. لا ننشر نصوصًا دينية قبل توثيقها ومراجعتها."
+    },
+    "health": {
+      "title": "الصحة",
+      "source": "articles",
+      "empty": "لا توجد مواد بعد."
+    },
+    "articles": {
+      "title": "المقالات",
+      "source": "articles",
+      "empty": "لا توجد مقالات بعد."
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "source": "videos",
+      "empty": "ستُنشر المقاطع المرئية هنا من الإدارة. تحتاج الفيديوهات إلى اتصال بالإنترنت للمشاهدة."
+    }
+  }
+}

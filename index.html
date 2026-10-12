@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2f7d6d">
+  <meta name="description" content="تعافي: أدوات عملية ومحتوى موثوق لإعادة بناء الذات، بلا حسابات وبخصوصية عالية.">
+  <title>تعافي</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1 class="app-title" id="appTitle">تعافي</h1>
+  </header>
+
+  <noscript><p class="state-msg">يحتاج التطبيق إلى تفعيل جافاسكربت.</p></noscript>
+
+  <main id="view" class="view" tabindex="-1" aria-live="polite"></main>
+
+  <button class="sos-fab" id="sosBtn" type="button" aria-label="أحتاج مساعدة الآن">
+    <span aria-hidden="true">🆘</span>
+    <span>أحتاج مساعدة الآن</span>
+  </button>
+
+  <nav class="bottom-nav" id="bottomNav" aria-label="التنقل الرئيسي"></nav>
+
+  <dialog class="sheet" id="sosSheet" aria-labelledby="sosTitle">
+    <div class="sheet-body" id="sosBody"></div>
+    <button class="btn btn-primary" id="sosClose" type="button">إغلاق</button>
+  </dialog>
+
+  <dialog class="sheet" id="confirmSheet" aria-labelledby="confirmTitle">
+    <div class="sheet-body">
+      <h2 id="confirmTitle" data-role="title"></h2>
+      <p data-role="message"></p>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-ghost" type="button" data-role="cancel">إلغاء</button>
+      <button class="btn btn-primary" type="button" data-role="ok">تأكيد</button>
+    </div>
+  </dialog>
+
+  <dialog class="sheet" id="genericSheet" aria-labelledby="genericTitle">
+    <div class="sheet-body" id="genericBody"></div>
+    <button class="btn btn-ghost" id="genericClose" type="button">إغلاق</button>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/prefs.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/outbox.js"></script>
+  <script src="js/journey-store.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/views/sections.js"></script>
+  <script src="js/views/home.js"></script>
+  <script src="js/views/journey.js"></script>
+  <script src="js/views/knowledge.js"></script>
+  <script src="js/views/events.js"></script>
+  <script src="js/views/games.js"></script>
+  <script src="js/views/more.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
